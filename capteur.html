@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <!-- ============================================
+       Page 2 : Les images et le capteur photo
+       Auteur  : Projet HTML/CSS
+       Fichier : capteur.html
+       ============================================ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Capteur & Image – Photographie Numérique</title>
+  <!-- Feuille de style commune -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== EN-TÊTE DU SITE ===== -->
+  <header>
+    <div class="header-inner">
+      <a class="site-logo" href="index.html">📷 Photo<span>Numérique</span></a>
+      <nav aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html">1. Historique</a></li>
+          <!-- Lien actif sur cette page -->
+          <li><a href="capteur.html" class="active">2. Capteur & Image</a></li>
+          <li><a href="traitement.html">3. Traitement</a></li>
+          <li><a href="exif.html">4. Métadonnées EXIF</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== CONTENU PRINCIPAL ===== -->
+  <main>
+
+    <!-- Bandeau d'introduction -->
+    <div class="page-banner">
+      <p class="numero-page">Page 2 / 4</p>
+      <h1>Les images et le capteur photo</h1>
+      <p class="intro">
+        Comment un appareil photo transforme-t-il la lumière en une image numérique ?
+        Découvrez le rôle essentiel du capteur et le concept de pixel.
+      </p>
+    </div>
+
+    <!-- ===== SECTION 1 : Paragraphe explicatif ===== -->
+    <section>
+      <div class="carte">
+        <h2>Qu'est-ce qu'une image numérique ?</h2>
+        <p>
+          Une image numérique est une grille rectangulaire de petits carrés colorés appelés
+          <strong>pixels</strong> (contraction de <em>picture elements</em>). Chaque pixel stocke
+          une couleur codée en nombres. Plus l'image contient de pixels, plus elle est détaillée :
+          c'est ce qu'on appelle la <strong>résolution</strong>, souvent exprimée en mégapixels (Mpx).
+        </p>
+        <p>
+          Par exemple, une image de 4000 × 3000 pixels contient 12 000 000 pixels, soit
+          <strong>12 mégapixels</strong>. Chaque pixel est décrit par trois valeurs numériques :
+          une pour le rouge (<abbr title="Red">R</abbr>), une pour le vert
+          (<abbr title="Green">G</abbr>) et une pour le bleu (<abbr title="Blue">B</abbr>).
+          C'est le modèle colorimétrique <strong>RVB</strong> (en anglais RGB).
+          Chaque valeur va de 0 à 255, ce qui permet de produire plus de 16 millions de couleurs différentes.
+        </p>
+        <p>
+          La qualité d'une image dépend également de la <strong>profondeur de couleur</strong> :
+          en 8 bits par canal, chaque pixel est codé sur 24 bits au total. Certains appareils
+          professionnels utilisent 12 ou 14 bits par canal (format RAW), offrant un rendu plus riche.
+        </p>
+
+        <div class="remarque">
+          <strong>À retenir :</strong> Un pixel est l'unité de base d'une image numérique. La résolution
+          mesure le nombre de pixels et donc le niveau de détail de l'image.
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 2 : Le capteur CCD et CMOS ===== -->
+    <section>
+      <div class="carte">
+        <h2>Le capteur photo : cœur de l'appareil</h2>
+        <p>
+          Le <strong>capteur photographique</strong> est la pièce électronique qui remplace la pellicule
+          argentique. Il est composé de millions de photodiodes, des composants sensibles à la lumière.
+          Chaque photodiode capte l'intensité lumineuse d'un point de l'image et la convertit en signal
+          électrique.
+        </p>
+        <p>
+          Il existe deux grandes familles de capteurs :
+        </p>
+
+        <!-- Grille 2 colonnes pour comparer les deux types de capteurs -->
+        <div class="grille-2">
+          <div class="remarque">
+            <strong>Capteur CCD</strong><br />
+            (Charge-Coupled Device) : haute qualité d'image, faible bruit, mais plus coûteux en énergie.
+            Utilisé en photographie professionnelle et en astronomie.
+          </div>
+          <div class="remarque">
+            <strong>Capteur CMOS</strong><br />
+            (Complementary Metal-Oxide Semiconductor) : moins gourmand en énergie, plus rapide.
+            Dominant aujourd'hui dans les smartphones et la plupart des appareils numériques.
+          </div>
+        </div>
+
+        <p>
+          Pour restituer les couleurs, les capteurs utilisent une <strong>matrice de Bayer</strong> :
+          chaque photodiode est recouverte d'un filtre coloré (rouge, vert ou bleu). Le vert est deux
+          fois plus représenté que le rouge et le bleu, car l'œil humain y est plus sensible.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 3 : Liste ordonnée – formation d'une image ===== -->
+    <section>
+      <div class="carte">
+        <h2>Comment se forme une image numérique ?</h2>
+        <p>Voici les étapes successives de la capture d'une image par un appareil photo numérique :</p>
+
+        <!-- ol : liste ordonnée -->
+        <ol class="liste-style">
+          <li>La lumière traverse l'<strong>objectif</strong> (ensemble de lentilles) qui la focalise.</li>
+          <li>Le <strong>diaphragme</strong> règle la quantité de lumière qui entre.</li>
+          <li>L'<strong>obturateur</strong> s'ouvre pendant un temps précis (vitesse d'obturation).</li>
+          <li>La lumière atteint le <strong>capteur</strong> (CCD ou CMOS) composé de millions de photodiodes.</li>
+          <li>Chaque photodiode génère un signal électrique proportionnel à l'intensité lumineuse reçue.</li>
+          <li>Le signal est amplifié (c'est ici qu'intervient le réglage <strong>ISO</strong>).</li>
+          <li>Un <strong>convertisseur analogique-numérique</strong> (CAN) transforme le signal en données binaires.</li>
+          <li>Le processeur de l'appareil applique la <strong>dématriçage</strong> (interprétation des couleurs).</li>
+          <li>L'image est compressée et enregistrée sur la <strong>carte mémoire</strong> (JPEG, RAW, etc.).</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 4 : Liste non ordonnée – paramètres d'exposition ===== -->
+    <section>
+      <div class="carte">
+        <h2>Les paramètres qui influencent l'image</h2>
+        <p>
+          Plusieurs réglages permettent de contrôler la qualité et l'apparence de la photo.
+          C'est ce qu'on appelle le <strong>triangle d'exposition</strong> :
+        </p>
+
+        <!-- ul : liste non ordonnée -->
+        <ul class="liste-style">
+          <li><strong>La sensibilité ISO</strong> : détermine la sensibilité du capteur à la lumière.
+            Un ISO élevé permet de photographier dans l'obscurité mais produit du « bruit numérique ».</li>
+          <li><strong>La vitesse d'obturation</strong> : durée pendant laquelle le capteur est exposé.
+            Rapide (1/1000s) = image nette, lente (1/4s) = flou de mouvement.</li>
+          <li><strong>Le diaphragme (ouverture)</strong> : contrôle la profondeur de champ.
+            Grand ouvert = fond flou (bokeh) ; fermé = toute la scène nette.</li>
+          <li><strong>La balance des blancs</strong> : corrige les dominantes de couleur selon
+            la source lumineuse (soleil, nuages, lampe tungstène…).</li>
+          <li><strong>La résolution</strong> : plus elle est élevée, plus le fichier est lourd
+            mais l'image peut être agrandie sans perte visible.</li>
+          <li><strong>Le format de fichier</strong> : JPEG (compressé, pratique) ou RAW
+            (toutes les données du capteur, idéal pour retoucher).</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 5 : Tableau des formats d'image ===== -->
+    <section>
+      <div class="carte">
+        <h2>Tableau comparatif des principaux formats d'image</h2>
+
+        <div class="tableau-wrapper">
+          <!-- Tableau HTML -->
+          <table>
+            <thead>
+              <tr>
+                <th>Format</th>
+                <th>Type</th>
+                <th>Compression</th>
+                <th>Usage typique</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>JPEG / JPG</td>
+                <td>Matriciel</td>
+                <td>Avec perte (lossy)</td>
+                <td>Photos du quotidien, web, partage</td>
+              </tr>
+              <tr>
+                <td>PNG</td>
+                <td>Matriciel</td>
+                <td>Sans perte (lossless)</td>
+                <td>Logos, illustrations, transparence</td>
+              </tr>
+              <tr>
+                <td>RAW</td>
+                <td>Matriciel brut</td>
+                <td>Aucune (données capteur)</td>
+                <td>Photographie professionnelle, retouche</td>
+              </tr>
+              <tr>
+                <td>TIFF</td>
+                <td>Matriciel</td>
+                <td>Sans perte</td>
+                <td>Impression, archivage professionnel</td>
+              </tr>
+              <tr>
+                <td>HEIF / HEIC</td>
+                <td>Matriciel</td>
+                <td>Avec perte (efficace)</td>
+                <td>iPhone, Android récents, gain de place</td>
+              </tr>
+              <tr>
+                <td>WebP</td>
+                <td>Matriciel</td>
+                <td>Avec ou sans perte</td>
+                <td>Images optimisées pour le web</td>
+              </tr>
+              <tr>
+                <td>SVG</td>
+                <td>Vectoriel</td>
+                <td>Sans perte (équations)</td>
+                <td>Icônes, logos, illustrations scalables</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 6 : Image ===== -->
+    <section>
+      <div class="carte">
+        <h2>Illustration : la matrice de Bayer</h2>
+        <div class="media-bloc">
+          <figure>
+            <!-- Image libre de droits – Wikimedia Commons -->
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Bayer_pattern_on_sensor.svg/640px-Bayer_pattern_on_sensor.svg.png"
+              alt="Schéma de la matrice de Bayer sur un capteur photo numérique"
+              loading="lazy"
+            />
+            <figcaption>
+              La matrice de Bayer : disposition des filtres rouge, vert et bleu sur un capteur photo.
+              Le vert est deux fois plus représenté. Source : Wikimedia Commons (CC BY-SA).
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 7 : Vidéo ===== -->
+    <section>
+      <div class="carte">
+        <h2>Vidéo : Comment fonctionne un capteur photo ?</h2>
+        <p>
+          Cette vidéo explique de façon claire et illustrée comment un capteur CMOS transforme
+          la lumière en image numérique, et quel est le rôle de chaque composant.
+        </p>
+        <!-- Vidéo YouTube intégrée en HTML pur -->
+        <div class="video-conteneur">
+          <iframe
+            src="https://www.youtube.com/embed/B7Dopih7jFY"
+            title="Comment fonctionne un capteur photo numérique – YouTube"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 8 : Source externe ===== -->
+    <section>
+      <div class="carte">
+        <h2>Source de référence</h2>
+        <p>
+          Pour en savoir plus sur les capteurs d'images et les technologies CCD et CMOS,
+          consultez cet article de référence :
+        </p>
+        <a
+          class="source-lien"
+          href="https://fr.wikipedia.org/wiki/Capteur_photographique"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          ↗ Wikipedia – Capteur photographique
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== PIED DE PAGE ===== -->
+  <footer>
+    <p>
+      Mini-site éducatif sur la photographie numérique &nbsp;|&nbsp;
+      Projet HTML/CSS &nbsp;|&nbsp;
+      <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a>
+    </p>
+  </footer>
+
+</body>
+</html>

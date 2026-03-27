@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <!-- ============================================
+       Page 3 : Le traitement d'image
+       Auteur  : Projet HTML/CSS
+       Fichier : traitement.html
+       ============================================ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Traitement d'image – Photographie Numérique</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== EN-TÊTE DU SITE ===== -->
+  <header>
+    <div class="header-inner">
+      <a class="site-logo" href="index.html">📷 Photo<span>Numérique</span></a>
+      <nav aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html">1. Historique</a></li>
+          <li><a href="capteur.html">2. Capteur & Image</a></li>
+          <!-- Lien actif sur cette page -->
+          <li><a href="traitement.html" class="active">3. Traitement</a></li>
+          <li><a href="exif.html">4. Métadonnées EXIF</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== CONTENU PRINCIPAL ===== -->
+  <main>
+
+    <!-- Bandeau d'introduction -->
+    <div class="page-banner">
+      <p class="numero-page">Page 3 / 4</p>
+      <h1>Le traitement d'image</h1>
+      <p class="intro">
+        Après la prise de vue, les images sont rarement parfaites. Découvrez comment
+        les logiciels de retouche permettent de corriger, améliorer et transformer une photographie.
+      </p>
+    </div>
+
+    <!-- ===== SECTION 1 : Paragraphe explicatif ===== -->
+    <section>
+      <div class="carte">
+        <h2>Qu'est-ce que le traitement d'image ?</h2>
+        <p>
+          Le <strong>traitement d'image</strong> désigne l'ensemble des opérations informatiques
+          appliquées à une image numérique pour la modifier ou l'améliorer. Ces opérations peuvent être
+          automatiques (réalisées par l'appareil photo lui-même) ou manuelles (réalisées par un
+          photographe à l'aide d'un logiciel spécialisé).
+        </p>
+        <p>
+          Deux grandes catégories de traitement existent : le traitement <strong>in-camera</strong>
+          (dans l'appareil), qui produit un fichier JPEG prêt à l'emploi, et le traitement
+          <strong>post-production</strong>, réalisé sur ordinateur à partir d'un fichier RAW.
+          Le format RAW conserve toutes les données brutes du capteur, offrant une latitude de
+          retouche bien supérieure au JPEG.
+        </p>
+        <p>
+          Les logiciels les plus utilisés sont <strong>Adobe Lightroom</strong> et
+          <strong>Adobe Photoshop</strong> pour les professionnels, mais des alternatives gratuites
+          comme <strong>GIMP</strong> (GNU Image Manipulation Program) ou
+          <strong>RawTherapee</strong> sont également très performantes.
+        </p>
+
+        <div class="remarque">
+          <strong>Différence clé :</strong> Lightroom est conçu pour organiser et retoucher de
+          façon non destructive (le fichier original est toujours préservé). Photoshop permet
+          des modifications plus créatives, pixel par pixel.
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 2 : Liste ordonnée – workflow de retouche ===== -->
+    <section>
+      <div class="carte">
+        <h2>Le flux de travail typique d'un photographe</h2>
+        <p>
+          Voici les étapes habituelles du traitement d'image, de l'importation à la publication :
+        </p>
+
+        <!-- ol : liste ordonnée -->
+        <ol class="liste-style">
+          <li><strong>Importation</strong> : transfert des fichiers RAW depuis la carte mémoire vers l'ordinateur.</li>
+          <li><strong>Sélection</strong> : tri des meilleures prises de vue (rejet des photos floues, sous-exposées).</li>
+          <li><strong>Correction de l'exposition</strong> : ajustement des hautes lumières, ombres, tons moyens.</li>
+          <li><strong>Balance des blancs</strong> : correction de la dominante de couleur pour un rendu naturel.</li>
+          <li><strong>Contraste et clarté</strong> : renforcement des détails et de la profondeur de l'image.</li>
+          <li><strong>Saturation et vibrance</strong> : ajustement de l'intensité des couleurs.</li>
+          <li><strong>Recadrage</strong> : amélioration de la composition en supprimant les éléments parasites.</li>
+          <li><strong>Réduction du bruit</strong> : atténuation du grain numérique causé par un ISO élevé.</li>
+          <li><strong>Exportation</strong> : enregistrement au format souhaité (JPEG, TIFF, PNG) avec le profil colorimétrique adapté.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 3 : Liste non ordonnée – outils communs ===== -->
+    <section>
+      <div class="carte">
+        <h2>Les outils de retouche essentiels</h2>
+        <p>
+          La plupart des logiciels de traitement d'image proposent ces outils fondamentaux :
+        </p>
+
+        <!-- ul : liste non ordonnée -->
+        <ul class="liste-style">
+          <li><strong>Histogramme</strong> : représentation graphique de la répartition des tons (ombres à lumières).</li>
+          <li><strong>Courbes de tons</strong> : contrôle précis de la luminosité et du contraste sur chaque plage tonale.</li>
+          <li><strong>Teinte / Saturation / Luminosité (TSL)</strong> : ajustement couleur par couleur.</li>
+          <li><strong>Niveaux</strong> : réglage des points noir, blanc et gris pour améliorer la dynamique.</li>
+          <li><strong>Calques et masques</strong> : retouche sélective d'une zone sans toucher le reste (Photoshop).</li>
+          <li><strong>Outil de clonage / tampon</strong> : suppression d'un élément indésirable (poussière, objet).</li>
+          <li><strong>Filtre de réduction du bruit</strong> : lissage du grain tout en préservant les détails.</li>
+          <li><strong>Filigrane (watermark)</strong> : ajout d'une signature ou d'un logo pour protéger l'image.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 4 : Tableau – logiciels de traitement ===== -->
+    <section>
+      <div class="carte">
+        <h2>Comparaison des principaux logiciels de retouche photo</h2>
+
+        <div class="tableau-wrapper">
+          <!-- Tableau HTML -->
+          <table>
+            <thead>
+              <tr>
+                <th>Logiciel</th>
+                <th>Éditeur</th>
+                <th>Prix</th>
+                <th>Niveau conseillé</th>
+                <th>Spécialité</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Adobe Lightroom</td>
+                <td>Adobe</td>
+                <td>Abonnement (~13 €/mois)</td>
+                <td>Débutant à avancé</td>
+                <td>Organisation + retouche non-destructive</td>
+              </tr>
+              <tr>
+                <td>Adobe Photoshop</td>
+                <td>Adobe</td>
+                <td>Abonnement (~28 €/mois)</td>
+                <td>Avancé à expert</td>
+                <td>Retouche créative, montage complexe</td>
+              </tr>
+              <tr>
+                <td>GIMP</td>
+                <td>Projet libre (GNU)</td>
+                <td>Gratuit et open source</td>
+                <td>Intermédiaire</td>
+                <td>Retouche générale, alternative à Photoshop</td>
+              </tr>
+              <tr>
+                <td>RawTherapee</td>
+                <td>Projet libre</td>
+                <td>Gratuit et open source</td>
+                <td>Intermédiaire à avancé</td>
+                <td>Développement de fichiers RAW</td>
+              </tr>
+              <tr>
+                <td>Darktable</td>
+                <td>Projet libre</td>
+                <td>Gratuit et open source</td>
+                <td>Intermédiaire à avancé</td>
+                <td>Alternative libre à Lightroom</td>
+              </tr>
+              <tr>
+                <td>Capture One</td>
+                <td>Phase One</td>
+                <td>Abonnement ou achat unique</td>
+                <td>Avancé à expert</td>
+                <td>Qualité professionnelle, gestion couleur</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 5 : Image ===== -->
+    <section>
+      <div class="carte">
+        <h2>Illustration : avant / après retouche</h2>
+        <div class="media-bloc">
+          <figure>
+            <!-- Image libre illustrant la retouche photo -->
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Michael_Themerson.jpg/640px-Michael_Themerson.jpg"
+              alt="Exemple de photographie retouchée en niveaux de gris"
+              loading="lazy"
+            />
+            <figcaption>
+              Exemple de traitement en post-production : conversion en niveaux de gris,
+              ajustement du contraste et de la netteté. Source : Wikimedia Commons.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 6 : L'IA dans le traitement d'image ===== -->
+    <section>
+      <div class="carte">
+        <h2>Le traitement d'image à l'ère de l'intelligence artificielle</h2>
+        <p>
+          Depuis les années 2020, l'<strong>intelligence artificielle</strong> (IA) révolutionne
+          le traitement d'image. Les algorithmes d'apprentissage profond (<em>deep learning</em>)
+          permettent aujourd'hui de :
+        </p>
+        <ul class="liste-style">
+          <li>Supprimer le flou de bougé avec une précision inédite.</li>
+          <li>Augmenter la résolution d'une image (super-résolution).</li>
+          <li>Effacer automatiquement des objets et reconstituer le fond.</li>
+          <li>Détecter et améliorer les visages (yeux fermés, flou facial).</li>
+          <li>Générer des images entièrement synthétiques (IA générative).</li>
+        </ul>
+        <p>
+          Des outils comme <strong>Adobe Firefly</strong>, <strong>Topaz Photo AI</strong>
+          ou la fonction « Magie de l'appareil photo » de Google illustrent cette tendance.
+          Ces technologies soulèvent également des questions éthiques sur l'authenticité
+          et la manipulation des images.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 7 : Vidéo ===== -->
+    <section>
+      <div class="carte">
+        <h2>Vidéo : Introduction au traitement photo avec Lightroom</h2>
+        <p>
+          Cette vidéo présente les bases du traitement d'image dans Adobe Lightroom :
+          importation, réglages d'exposition, couleurs, et exportation finale.
+        </p>
+        <!-- Vidéo YouTube intégrée en HTML pur -->
+        <div class="video-conteneur">
+          <iframe
+            src="https://www.youtube.com/embed/GKtgxaRzj_A"
+            title="Tutoriel Lightroom – Traitement photo – YouTube"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 8 : Source externe ===== -->
+    <section>
+      <div class="carte">
+        <h2>Source de référence</h2>
+        <p>
+          Pour en apprendre davantage sur les techniques de traitement d'image,
+          consultez la page Wikipedia dédiée :
+        </p>
+        <a
+          class="source-lien"
+          href="https://fr.wikipedia.org/wiki/Traitement_d%27images"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          ↗ Wikipedia – Traitement d'images
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== PIED DE PAGE ===== -->
+  <footer>
+    <p>
+      Mini-site éducatif sur la photographie numérique &nbsp;|&nbsp;
+      Projet HTML/CSS &nbsp;|&nbsp;
+      <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a>
+    </p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,421 @@
+/* ==============================================
+   FEUILLE DE STYLE - Mini-site Photographie Numérique
+   Auteur : Projet HTML/CSS Lycée
+   Description : Styles communs à toutes les pages
+   ============================================== */
+
+/* --- 1. Variables CSS globales --- */
+:root {
+  --couleur-fond: #0f1117;
+  --couleur-surface: #1a1d27;
+  --couleur-surface2: #232736;
+  --couleur-accent: #f5a623;
+  --couleur-accent2: #e05c2a;
+  --couleur-texte: #e8eaf0;
+  --couleur-texte-doux: #9da3b8;
+  --couleur-bordure: #2e3347;
+  --police-titre: 'Georgia', 'Times New Roman', serif;
+  --police-corps: 'Trebuchet MS', 'Verdana', sans-serif;
+  --rayon: 8px;
+  --ombre: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* --- 2. Réinitialisation & Base --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* --- 3. Corps de la page --- */
+body {
+  background-color: var(--couleur-fond);     /* Propriété CSS 1 : background-color */
+  color: var(--couleur-texte);              /* Propriété CSS 2 : color */
+  font-family: var(--police-corps);         /* Propriété CSS 3 : font-family */
+  font-size: 16px;                          /* Propriété CSS 4 : font-size */
+  line-height: 1.75;                        /* Propriété CSS 5 : line-height */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ==========================================
+   EN-TÊTE (HEADER)
+   ========================================== */
+header {
+  background-color: var(--couleur-surface);
+  border-bottom: 3px solid var(--couleur-accent); /* Propriété CSS 6 : border */
+  padding: 0 2rem;                               /* Propriété CSS 7 : padding */
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: var(--ombre);                      /* Propriété CSS 8 : box-shadow */
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;                               /* Propriété CSS 9 : margin */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+
+/* --- Logo / Titre du site --- */
+.site-logo {
+  font-family: var(--police-titre);
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--couleur-accent);
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+
+.site-logo span {
+  color: var(--couleur-texte);
+}
+
+/* ==========================================
+   NAVIGATION
+   ========================================== */
+nav ul {
+  list-style: none;                           /* Propriété CSS 10 : list-style */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+nav ul li a {
+  display: block;
+  color: var(--couleur-texte-doux);
+  text-decoration: none;
+  padding: 0.45rem 0.9rem;
+  border-radius: var(--rayon);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  border: 1px solid transparent;
+  transition: color 0.2s, border-color 0.2s, background-color 0.2s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: var(--couleur-accent);
+  border-color: var(--couleur-accent);
+  background-color: rgba(245, 166, 35, 0.08);
+}
+
+/* ==========================================
+   CONTENU PRINCIPAL
+   ========================================== */
+main {
+  flex: 1;
+  max-width: 1100px;
+  width: 100%;
+  margin: 2.5rem auto;
+  padding: 0 2rem;
+}
+
+/* --- Bannière de page --- */
+.page-banner {
+  background: linear-gradient(135deg, var(--couleur-surface2) 0%, var(--couleur-surface) 100%);
+  border-left: 5px solid var(--couleur-accent);
+  border-radius: var(--rayon);
+  padding: 2rem 2.5rem;
+  margin-bottom: 2.5rem;
+  box-shadow: var(--ombre);
+}
+
+.page-banner .numero-page {
+  font-size: 0.78rem;
+  color: var(--couleur-accent);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.page-banner h1 {
+  font-family: var(--police-titre);
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--couleur-texte);
+  margin-bottom: 0.5rem;
+}
+
+.page-banner .intro {
+  color: var(--couleur-texte-doux);
+  font-size: 1rem;
+  max-width: 700px;
+}
+
+/* ==========================================
+   SECTIONS & CARTES
+   ========================================== */
+section {
+  margin-bottom: 2.5rem;
+}
+
+section h2 {
+  font-family: var(--police-titre);
+  font-size: 1.4rem;
+  color: var(--couleur-accent);
+  margin-bottom: 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--couleur-bordure);
+}
+
+section p {
+  color: var(--couleur-texte);
+  margin-bottom: 1rem;
+}
+
+/* --- Carte de contenu --- */
+.carte {
+  background-color: var(--couleur-surface);
+  border: 1px solid var(--couleur-bordure);
+  border-radius: var(--rayon);
+  padding: 1.75rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--ombre);
+}
+
+/* ==========================================
+   LISTES
+   ========================================== */
+
+/* Liste ordonnée */
+ol.liste-style {
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+}
+
+ol.liste-style li {
+  color: var(--couleur-texte);
+  margin-bottom: 0.6rem;
+  padding-left: 0.4rem;
+}
+
+ol.liste-style li::marker {
+  color: var(--couleur-accent);
+  font-weight: bold;
+}
+
+/* Liste non ordonnée */
+ul.liste-style {
+  list-style: none;
+  margin: 1rem 0;
+  padding-left: 0;
+}
+
+ul.liste-style li {
+  color: var(--couleur-texte);
+  margin-bottom: 0.6rem;
+  padding-left: 1.4rem;
+  position: relative;
+}
+
+ul.liste-style li::before {
+  content: "▸";
+  color: var(--couleur-accent2);
+  position: absolute;
+  left: 0;
+  font-size: 0.85rem;
+  top: 0.1rem;
+}
+
+/* ==========================================
+   TABLEAUX
+   ========================================== */
+.tableau-wrapper {
+  overflow-x: auto;
+  margin: 1.2rem 0;
+  border-radius: var(--rayon);
+  border: 1px solid var(--couleur-bordure);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+thead {
+  background-color: var(--couleur-accent);
+}
+
+thead th {
+  color: #0f1117;
+  font-weight: 700;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-family: var(--police-corps);
+}
+
+tbody tr {
+  border-bottom: 1px solid var(--couleur-bordure);
+}
+
+tbody tr:nth-child(even) {
+  background-color: rgba(255,255,255,0.03);
+}
+
+tbody tr:hover {
+  background-color: rgba(245, 166, 35, 0.05);
+}
+
+tbody td {
+  padding: 0.7rem 1rem;
+  color: var(--couleur-texte);
+  vertical-align: top;
+}
+
+/* ==========================================
+   MÉDIAS (IMAGE & VIDÉO)
+   ========================================== */
+.media-bloc {
+  margin: 1.5rem 0;
+}
+
+.media-bloc figure {
+  background-color: var(--couleur-surface);
+  border: 1px solid var(--couleur-bordure);
+  border-radius: var(--rayon);
+  overflow: hidden;
+  box-shadow: var(--ombre);
+}
+
+.media-bloc img {
+  width: 100%;
+  max-height: 360px;
+  object-fit: cover;
+  display: block;
+}
+
+.media-bloc figcaption {
+  padding: 0.7rem 1rem;
+  color: var(--couleur-texte-doux);
+  font-size: 0.85rem;
+  font-style: italic;
+  border-top: 1px solid var(--couleur-bordure);
+}
+
+/* Conteneur vidéo responsive 16:9 */
+.video-conteneur {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: var(--rayon);
+  border: 1px solid var(--couleur-bordure);
+  box-shadow: var(--ombre);
+  margin: 1rem 0;
+}
+
+.video-conteneur iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* ==========================================
+   LIEN SOURCE
+   ========================================== */
+.source-lien {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--couleur-accent);
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 600;
+  padding: 0.4rem 0.9rem;
+  border: 1px solid var(--couleur-accent);
+  border-radius: 30px;
+  margin-top: 0.5rem;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.source-lien:hover {
+  background-color: var(--couleur-accent);
+  color: #0f1117;
+}
+
+/* ==========================================
+   PIED DE PAGE (FOOTER)
+   ========================================== */
+footer {
+  background-color: var(--couleur-surface);
+  border-top: 2px solid var(--couleur-bordure);
+  text-align: center;
+  padding: 1.5rem 2rem;
+  color: var(--couleur-texte-doux);
+  font-size: 0.85rem;
+}
+
+footer a {
+  color: var(--couleur-accent);
+  text-decoration: none;
+}
+
+/* ==========================================
+   GRILLE DEUX COLONNES
+   ========================================== */
+.grille-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+/* ==========================================
+   ENCADRÉ / REMARQUE
+   ========================================== */
+.remarque {
+  background: rgba(245, 166, 35, 0.08);
+  border-left: 4px solid var(--couleur-accent);
+  border-radius: 0 var(--rayon) var(--rayon) 0;
+  padding: 1rem 1.25rem;
+  margin: 1.2rem 0;
+  color: var(--couleur-texte);
+  font-size: 0.95rem;
+}
+
+.remarque strong {
+  color: var(--couleur-accent);
+}
+
+/* ==========================================
+   RESPONSIVE (MOBILE)
+   ========================================== */
+@media (max-width: 700px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    gap: 0.2rem;
+  }
+
+  .page-banner h1 {
+    font-size: 1.5rem;
+  }
+
+  .grille-2 {
+    grid-template-columns: 1fr;
+  }
+
+  main {
+    padding: 0 1rem;
+    margin: 1.5rem auto;
+  }
+}

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <!-- ============================================
+       Page 1 : Historique de la photographie numérique
+       Auteur  : Projet HTML/CSS
+       Fichier : index.html
+       ============================================ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Historique – Photographie Numérique</title>
+  <!-- Lien vers la feuille de style commune -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== EN-TÊTE DU SITE ===== -->
+  <header>
+    <div class="header-inner">
+      <!-- Logo / nom du site -->
+      <a class="site-logo" href="index.html">📷 Photo<span>Numérique</span></a>
+
+      <!-- Menu de navigation principal -->
+      <nav aria-label="Navigation principale">
+        <ul>
+          <!-- Lien actif sur cette page -->
+          <li><a href="index.html" class="active">1. Historique</a></li>
+          <li><a href="capteur.html">2. Capteur & Image</a></li>
+          <li><a href="traitement.html">3. Traitement</a></li>
+          <li><a href="exif.html">4. Métadonnées EXIF</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== CONTENU PRINCIPAL ===== -->
+  <main>
+
+    <!-- Bandeau d'introduction de la page -->
+    <div class="page-banner">
+      <p class="numero-page">Page 1 / 4</p>
+      <h1>Historique de la photographie numérique</h1>
+      <p class="intro">
+        Retrace l'évolution de la photographie argentique vers le numérique :
+        des premières expériences dans les laboratoires aux smartphones d'aujourd'hui.
+      </p>
+    </div>
+
+    <!-- ===== SECTION 1 : Paragraphe explicatif ===== -->
+    <section>
+      <div class="carte">
+        <h2>Les origines : de l'argentique au numérique</h2>
+        <p>
+          La photographie traditionnelle, dite <strong>argentique</strong>, repose sur une réaction chimique :
+          la lumière impressionne une pellicule recouverte de sels d'argent. Cette technique, inventée au
+          XIX<sup>e</sup> siècle, a dominé le monde de l'image pendant plus d'un siècle.
+        </p>
+        <p>
+          C'est en <strong>1969</strong> que Willard Boyle et George Smith inventent le capteur
+          <abbr title="Charge-Coupled Device">CCD</abbr> chez Bell Labs. Ce dispositif permet de convertir
+          la lumière en signal électrique, ouvrant la voie à la photographie numérique. En <strong>1975</strong>,
+          l'ingénieur Steven Sasson de Kodak construit le tout premier appareil photo numérique : il pèse
+          3,6 kg, prend 23 secondes pour enregistrer une image en noir et blanc de 0,01 mégapixel !
+        </p>
+        <p>
+          Les années 1990 voient l'arrivée des premiers appareils grand public. En <strong>1991</strong>,
+          Kodak commercialise le DCS 100, un reflex numérique professionnel. En <strong>1994</strong>,
+          Apple lance le QuickTake 100, premier appareil numérique vendu au grand public. Depuis, la
+          résolution, la rapidité et l'accessibilité n'ont cessé de s'améliorer.
+        </p>
+
+        <!-- Remarque encadrée -->
+        <div class="remarque">
+          <strong>Le saviez-vous ?</strong> En 2012, Kodak – l'inventeur du premier appareil numérique –
+          a déposé le bilan, victime de la révolution qu'elle avait elle-même initiée.
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 2 : Liste ordonnée ===== -->
+    <section>
+      <div class="carte">
+        <h2>Chronologie des grandes étapes</h2>
+        <p>Voici les événements clés qui ont marqué l'histoire de la photographie numérique :</p>
+
+        <!-- ol : liste ordonnée -->
+        <ol class="liste-style">
+          <li><strong>1969</strong> – Invention du capteur CCD par Boyle et Smith (Prix Nobel de physique 2009).</li>
+          <li><strong>1975</strong> – Premier appareil photo numérique prototype par Steven Sasson (Kodak), 0,01 Mpx.</li>
+          <li><strong>1981</strong> – Sony présente le Mavica, premier appareil à stocker des images sur disquette.</li>
+          <li><strong>1991</strong> – Kodak DCS 100 : premier reflex numérique professionnel commercialisé (1,3 Mpx).</li>
+          <li><strong>1994</strong> – Apple QuickTake 100 : premier appareil numérique grand public abordable.</li>
+          <li><strong>2000</strong> – Kyocera Visual Phone VP-210 : premier téléphone avec appareil photo intégré.</li>
+          <li><strong>2007</strong> – Lancement de l'iPhone d'Apple, début de l'ère de la photographie mobile.</li>
+          <li><strong>2015</strong> – Les smartphones dépassent les appareils compacts en nombre de photos prises.</li>
+          <li><strong>2020s</strong> – L'intelligence artificielle révolutionne le traitement et la retouche photo.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 3 : Liste non ordonnée ===== -->
+    <section>
+      <div class="carte">
+        <h2>Avantages du numérique sur l'argentique</h2>
+        <p>
+          La photographie numérique a remplacé l'argentique pour de nombreuses raisons pratiques et économiques :
+        </p>
+
+        <!-- ul : liste non ordonnée -->
+        <ul class="liste-style">
+          <li>Résultat immédiat : on voit la photo dès qu'elle est prise (pas de développement chimique).</li>
+          <li>Coût réduit : une carte mémoire remplace des dizaines de pellicules.</li>
+          <li>Retouche facile : les logiciels permettent de corriger luminosité, couleurs, cadrage, etc.</li>
+          <li>Partage instantané : envoi par internet, réseaux sociaux, messagerie en quelques secondes.</li>
+          <li>Capacité de stockage quasi illimitée : des milliers de photos sur un seul support.</li>
+          <li>Formats variés : JPEG, RAW, PNG, HEIF selon les besoins de qualité ou de compression.</li>
+          <li>Respect de l'environnement : moins de produits chimiques de développement utilisés.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 4 : Tableau ===== -->
+    <section>
+      <div class="carte">
+        <h2>Comparaison : argentique vs numérique</h2>
+
+        <div class="tableau-wrapper">
+          <!-- Tableau comparatif -->
+          <table>
+            <thead>
+              <tr>
+                <th>Critère</th>
+                <th>Photographie argentique</th>
+                <th>Photographie numérique</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Support d'enregistrement</td>
+                <td>Pellicule chimique (film)</td>
+                <td>Capteur électronique (CCD/CMOS)</td>
+              </tr>
+              <tr>
+                <td>Résultat visible</td>
+                <td>Après développement chimique</td>
+                <td>Immédiatement sur l'écran</td>
+              </tr>
+              <tr>
+                <td>Coût par photo</td>
+                <td>Élevé (pellicule + développement)</td>
+                <td>Quasi nul (réutilisable)</td>
+              </tr>
+              <tr>
+                <td>Qualité d'image</td>
+                <td>Grain argentique, tonalités riches</td>
+                <td>Résolution variable, très haute qualité</td>
+              </tr>
+              <tr>
+                <td>Retouche</td>
+                <td>Chambre noire, procédés lents</td>
+                <td>Logiciels rapides et non destructifs</td>
+              </tr>
+              <tr>
+                <td>Partage</td>
+                <td>Tirage papier, diapositives</td>
+                <td>Internet, réseaux sociaux, email</td>
+              </tr>
+              <tr>
+                <td>Archivage</td>
+                <td>Négatifs, slides (fragiles)</td>
+                <td>Disque dur, cloud (risque de perte)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 5 : Image ===== -->
+    <section>
+      <div class="carte">
+        <h2>Illustration : Le premier appareil photo numérique</h2>
+        <div class="media-bloc">
+          <figure>
+            <!-- Image libre de droits depuis Wikimedia Commons -->
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Steven_Sasson_2009_%28cropped%29.jpg/640px-Steven_Sasson_2009_%28cropped%29.jpg"
+              alt="Steven Sasson, inventeur du premier appareil photo numérique"
+              loading="lazy"
+            />
+            <figcaption>
+              Steven Sasson, ingénieur chez Kodak, inventeur du premier appareil photo numérique en 1975.
+              Source : Wikimedia Commons (domaine public).
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 6 : Vidéo YouTube ===== -->
+    <section>
+      <div class="carte">
+        <h2>Vidéo : L'histoire de la photographie numérique</h2>
+        <p>
+          Cette vidéo retrace en quelques minutes les grandes étapes de l'invention et du développement
+          de la photographie numérique, des laboratoires Bell Labs aux smartphones modernes.
+        </p>
+
+        <!-- Vidéo YouTube intégrée via iframe (HTML pur, sans JavaScript) -->
+        <div class="video-conteneur">
+          <iframe
+            src="https://www.youtube.com/embed/TLJz3UCiME4"
+            title="Histoire de la photographie numérique – YouTube"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 7 : Source externe ===== -->
+    <section>
+      <div class="carte">
+        <h2>Pour aller plus loin</h2>
+        <p>
+          Consultez l'article Wikipedia sur l'histoire de la photographie numérique pour approfondir
+          vos connaissances avec des références fiables et détaillées.
+        </p>
+        <!-- Lien externe stylisé -->
+        <a
+          class="source-lien"
+          href="https://fr.wikipedia.org/wiki/Photographie_num%C3%A9rique"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          ↗ Wikipedia – Photographie numérique
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== PIED DE PAGE ===== -->
+  <footer>
+    <p>
+      Mini-site éducatif sur la photographie numérique &nbsp;|&nbsp;
+      Projet HTML/CSS &nbsp;|&nbsp;
+      <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a>
+    </p>
+  </footer>
+
+</body>
+</html>
