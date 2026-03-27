@@ -1,7 +1,7 @@
 # 📷 Mini-site – Photographie Numérique
 
-Site web statique éducatif réalisé en **HTML et CSS uniquement** (sans JavaScript),
-destiné à un public lycéen.
+Site web statique cree par Badis Klingen en HTML et CSS
+
 
 ## Structure du projet
 
@@ -65,7 +65,7 @@ photo-site/
 5. Le site sera accessible à l'adresse :
    `https://votre-nom.github.io/votre-depot/`
 
-## Contraintes respectées
+## Contraintes respectees
 
 - ✅ HTML et CSS uniquement (aucun JavaScript)
 - ✅ Code commenté et structuré
